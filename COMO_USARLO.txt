@@ -1,0 +1,57 @@
+=== PROYECTO ANDROID LISTO PARA ABRIR ===
+
+1. Descomprime esta carpeta donde quieras tener el proyecto,
+   por ejemplo:  C:\Users\Usuario\AndroidStudioProjects\EquiposFutbol
+
+2. En Android Studio:  File -> Open  ->  selecciona la carpeta EquiposFutbol
+   (la que contiene settings.gradle.kts, NO la de adentro)
+
+3. Android Studio va a decir que faltan componentes del SDK.
+   Dale a "Install missing SDK packages" y espera.
+   Tambien va a descargar Gradle 8.9 la primera vez.
+
+4. Si pide un JDK, elige el que trae Android Studio (JetBrains Runtime 17 o superior).
+
+5. Para probar sin telefono:
+   Tools -> Device Manager -> Create Virtual Device
+   Pixel 4  ->  imagen de sistema API 30 o superior  ->  Finish
+   Luego el triangulo verde.
+
+6. Para generar el APK:
+   Build -> Build Bundle(s)/APK(s) -> Build APK(s)
+   Queda en  app/build/outputs/apk/debug/app-debug.apk
+   Copialo a la raiz del proyecto antes de hacer git add
+   (el .gitignore excluye la carpeta build).
+
+=== QUE HAY DENTRO ===
+
+EquiposFutbol/
+├── settings.gradle.kts          configuracion del proyecto y repositorios
+├── build.gradle.kts             versiones de los plugins
+├── gradle.properties            memoria de Gradle y AndroidX
+├── gradle/wrapper/              version de Gradle
+├── .gitignore
+├── README.md                    el que exige la guia
+└── app/
+    ├── build.gradle.kts         dependencias: Retrofit, OkHttp, Gson, corrutinas
+    ├── proguard-rules.pro
+    └── src/main/
+        ├── AndroidManifest.xml  permiso de INTERNET y las 6 pantallas
+        ├── java/com/unicartagena/equiposfutbol/
+        │   ├── data/
+        │   │   ├── Modelos.kt
+        │   │   ├── ApiService.kt
+        │   │   └── RetrofitClient.kt
+        │   ├── LoginActivity.kt
+        │   ├── MenuActivity.kt
+        │   ├── EquiposActivity.kt
+        │   ├── EquipoFormActivity.kt
+        │   ├── UsuariosActivity.kt
+        │   └── UsuarioFormActivity.kt
+        └── res/
+            ├── layout/   (6 pantallas)
+            └── values/   (nombre de la app y tema)
+
+NOTA: falta gradle-wrapper.jar y los scripts gradlew.
+Android Studio los genera solo al abrir el proyecto.
+Despues de abrirlo, aparecen en la raiz y se suben con git add.
