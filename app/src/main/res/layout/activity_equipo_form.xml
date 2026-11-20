@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/lblTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nuevo equipo"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="12dp" />
+
+    <EditText
+        android:id="@+id/txtNombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nombre"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/txtEslogan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Eslogan"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/txtTecnico"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tecnico"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/txtPaisForm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Pais"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/txtCiudad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ciudad"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/txtCategoria"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Categoria"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/txtGolesForm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Goles"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/txtJugados"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Partidos jugados"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/txtGanados"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Partidos ganados"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/txtEmpates"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Empates"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/txtCampeonatos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Campeonatos"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/txtExpulsiones"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Expulsiones"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/btnGuardar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Guardar"
+        android:layout_marginTop="12dp" />
+
+    <Button
+        android:id="@+id/btnCancelar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cancelar" />
+
+</LinearLayout>
+</ScrollView>
