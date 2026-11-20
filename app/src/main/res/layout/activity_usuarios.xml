@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Usuarios"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="12dp" />
+
+    <Button
+        android:id="@+id/btnNuevoUsuario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="+ Nuevo usuario" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp">
+
+        <EditText
+            android:id="@+id/txtFragmento"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:hint="Parte del nombre" />
+
+        <Button
+            android:id="@+id/btnPorNombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Buscar" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/txtDesde"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:hint="2026-11-01" />
+
+        <EditText
+            android:id="@+id/txtHasta"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:hint="2026-11-30" />
+
+        <Button
+            android:id="@+id/btnPorFecha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fechas" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnTodosUsuarios"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ver todos" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Toca para editar, manten pulsado para eliminar"
+        android:textSize="12sp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="4dp" />
+
+    <ListView
+        android:id="@+id/listaUsuarios"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>
